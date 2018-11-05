@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	  <script type="text/javascript" src="assets/funcoes.js"></script>
+    <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+
+
+    <title>Aula api</title>
+  </head>
+  <body onLoad="listar();">
+   <div class="container"><br>		
+
+     <!-- Large modal -->
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-lg">Cadastrar</button>
+    
+
+
+    <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+              <div  id="alert">
+               
+              </div>
+         	<form >
+         		<h2>Cadastrar cidade</h2>
+         		<label>Nome</label>
+         		<input type="text" class="form-control" name="nome" id="nome"><br>	
+         		<label>UF</label>
+         		<input type="text" class="form-control" name="uf" id="uf"><br>
+         		<button type="button" class="btn btn-primary btn-lg btn-block" onClick="inserir()">Cadastrar</button>
+          </form>
+        </div>
+      </div>
+    </div><br>	<br>		
+    <!-- Modal !-->
+   <div id="ex1" class="modal">
+    <p>Thanks for clicking. That felt good.</p>
+    <a href="#" rel="modal:close">Close</a>
+   </div>
+    
+
+  <div class="table-responsive">
+    <table class="table table-dark table-hover" id="tabela">
+      <thead>
+        <tr>
+          <th>N°</th>
+          <th>NOME</th>
+          <th>UF</th>
+          <th><i class="fas fa-edit"></i></th>
+          <th><i class="fas fa-trash-alt"></i></th>
+        </tr>
+      </thead>
+
+      <tbody>
+       
+      </tbody>
+    </table>
+  </div> 
+
+
+
+      
+	
+
+
+     
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+    </body>
+</html>
